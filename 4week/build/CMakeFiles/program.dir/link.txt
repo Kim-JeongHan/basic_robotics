@@ -1,0 +1,1 @@
+/usr/bin/cc CMakeFiles/program.dir/review1.c.o -o program 

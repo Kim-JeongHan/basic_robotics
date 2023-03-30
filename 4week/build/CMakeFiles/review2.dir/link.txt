@@ -1,0 +1,1 @@
+/usr/bin/cc CMakeFiles/review2.dir/review2.c.o -o review2 
