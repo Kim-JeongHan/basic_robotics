@@ -3,7 +3,7 @@
 
 int LED_PIN = 9; 
 int sw = 5;
-bool a= 0;
+bool flag=0;
 
 void setup()
 {
@@ -15,22 +15,26 @@ void setup()
 void loop()
 {
     if(digitalRead(sw)==LOW)
-    {
-        if(a==0)
-        {
-            a=1;
-        }
-        else
-        {
-            a=0;
-        }
-    }
-    if(a==1)
-    {
+    {   
+        flag=1;
         digitalWrite(LED_PIN, HIGH);
+        delay(300);
+        digitalWrite(LED_PIN, LOW);
     }
     else
     {
-        digitalWrite(LED_PIN, LOW);
+        if(flag==1)
+        {
+            if(digtalRead(sw)==LOW)
+            {
+            digitalWrite(LED_PIN, HIGH);
+            }
+        }
+        else
+        {
+            digitalWrite(LED_PIN, LOW);
+        }
+        flag=0;
     }
+
 }
