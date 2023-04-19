@@ -1,6 +1,7 @@
 ## Hardware structure
-led connect to pin 9
-potetiometer connect to  pin A5
+led : Digital PIN
+
+potetiometer : 오른쪽이 vcc왼쪽이 ground이다.가운데에는 analogpin을 연결
 
 
 ```

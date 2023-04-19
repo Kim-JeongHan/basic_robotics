@@ -1,6 +1,3 @@
-#include <iostream>
-
-
 int LED_PIN = 9; 
 int sw = 5;
 int number=0;
